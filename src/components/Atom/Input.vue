@@ -7,13 +7,13 @@ export interface Emits {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  modelValue: 'padrao'
-})
-const emit = defineEmits<Emits>()
+  modelValue: 'padrao',
+});
+const emit = defineEmits<Emits>();
 const data = computed({
   get: () => props.modelValue,
-  set: val => emit('update:modelValue', val)
-})
+  set: val => emit('update:modelValue', val),
+});
 </script>
 
 <template>

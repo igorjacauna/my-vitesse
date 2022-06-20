@@ -1,14 +1,12 @@
-import path from 'path'
-import { defineConfig } from 'vite'
-import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
-import Layouts from 'vite-plugin-vue-layouts'
-import Icons from 'unplugin-icons/vite'
-import IconsResolver from 'unplugin-icons/resolver'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import WindiCSS from 'vite-plugin-windicss'
-import { VitePWA } from 'vite-plugin-pwa'
+import path from 'path';
+import { defineConfig } from 'vite';
+import Vue from '@vitejs/plugin-vue';
+import Pages from 'vite-plugin-pages';
+import Layouts from 'vite-plugin-vue-layouts';
+import Icons from 'unplugin-icons/vite';
+import AutoImport from 'unplugin-auto-import/vite';
+import WindiCSS from 'vite-plugin-windicss';
+import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -29,16 +27,6 @@ export default defineConfig({
         '@vueuse/core',
       ],
       dts: 'src/auto-imports.d.ts',
-    }),
-    Components({
-      dts: 'src/components.d.ts',
-      directoryAsNamespace: true,
-      resolvers: [
-        IconsResolver({
-          componentPrefix: '',
-          // enabledCollections: ['carbon']
-        }),
-      ]
     }),
     Icons(),
     WindiCSS(),
@@ -81,6 +69,6 @@ export default defineConfig({
       'vue-router',
       '@vueuse/core',
       '@vueuse/head',
-    ]
+    ],
   },
-})
+});

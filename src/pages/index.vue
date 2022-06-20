@@ -1,20 +1,24 @@
 <script setup lang="ts">
-const valor = ref(0)
+import Input from '../components/Atom/Input.vue';
+import Card from '../components/Atom/Card.vue';
+import Button from '../components/Atom/Button.vue';
+
+const valor = ref(0);
 </script>
 
 <template>
-  <AtomCard class="bg-white border">
+  <Card class="bg-white border">
     <div>Start page</div>
-    <AtomInput
+    <Input
       v-model="valor"
       type="text"
     />
     {{ valor }}
-  </AtomCard>
-  <AtomButton
+  </Card>
+  <Button
     class="primary"
     @click="valor++"
   >
     Sum
-  </AtomButton>
+  </Button>
 </template>
