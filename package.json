@@ -9,6 +9,7 @@
   "dependencies": {
     "@vueuse/core": "^8.7.4",
     "@vueuse/head": "^0.7.6",
+    "daisyui": "^2.17.0",
     "nprogress": "^0.2.0",
     "vue": "^3.2.37",
     "vue-router": "^4.0.16"
@@ -19,7 +20,10 @@
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/parser": "^5.29.0",
     "@vitejs/plugin-vue": "^2.3.3",
+    "autoprefixer": "^10.4.7",
     "eslint": "^8.18.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4",
     "typescript": "^4.7.4",
     "unplugin-auto-import": "^0.8.8",
     "unplugin-icons": "^0.14.5",
@@ -27,8 +31,6 @@
     "vite-plugin-pages": "^0.24.2",
     "vite-plugin-pwa": "^0.12.0",
     "vite-plugin-vue-layouts": "^0.6.0",
-    "vite-plugin-windicss": "^1.8.4",
-    "vue-tsc": "^0.38.1",
-    "windicss": "^3.5.4"
+    "vue-tsc": "^0.38.1"
   }
 }

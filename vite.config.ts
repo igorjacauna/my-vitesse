@@ -5,7 +5,6 @@ import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import Icons from 'unplugin-icons/vite';
 import AutoImport from 'unplugin-auto-import/vite';
-import WindiCSS from 'vite-plugin-windicss';
 import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vitejs.dev/config/
@@ -29,7 +28,6 @@ export default defineConfig({
       dts: 'src/auto-imports.d.ts',
     }),
     Icons(),
-    WindiCSS(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],

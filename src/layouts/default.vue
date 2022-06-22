@@ -1,6 +1,10 @@
+<script lang="ts" setup>
+import Footer from '../components/Organism/Footer.vue';
+
+</script>
 <template>
-  <main class="px-4 py-10 text-center text-gray-700 dark:text-gray-200">
+  <main class="p-10">
     <router-view />
-    <OrganismFooter />
+    <Footer />
   </main>
 </template>

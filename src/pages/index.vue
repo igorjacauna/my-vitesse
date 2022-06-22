@@ -7,7 +7,7 @@ const valor = ref(0);
 </script>
 
 <template>
-  <Card class="bg-white border">
+  <Card>
     <div>Start page</div>
     <Input
       v-model="valor"
@@ -16,7 +16,7 @@ const valor = ref(0);
     {{ valor }}
   </Card>
   <Button
-    class="primary"
+    class="btn-primary btn-sm"
     @click="valor++"
   >
     Sum
