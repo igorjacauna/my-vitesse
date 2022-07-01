@@ -13,6 +13,8 @@
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "isolatedModules": true,
     "types": [
       "vite/client",
       "vite-plugin-pages/client",
@@ -23,7 +25,4 @@
     }
   },
   "exclude": ["dist", "node_modules"],
-  "vueCompilerOptions": {
-    "experimentalDisableTemplateSupport": true
-  }
 }
